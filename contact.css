@@ -1,0 +1,278 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background: #00040f;
+    color: white;
+}
+
+nav {
+    background: #010913;
+    color: white;
+    height: 15vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-sizing: border-box;
+}
+
+header {
+    margin-left: 15px;
+}
+
+h2 {
+    display: inline-block;
+    font-size: 32px;
+    cursor: pointer;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 6px;
+}
+
+.tag {
+    color: #1e6af8;
+}
+
+
+ol {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+ol a {
+    text-decoration: none;
+    color: white;
+    position: relative;
+    padding-bottom: 8px;
+}
+
+nav li {
+    font-size: 22px;
+}
+
+ol a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    width: 0;
+    height: 3px;
+
+    background: #2563EB;
+    transition: 0.3s;
+}
+
+ol a:hover::after {
+    width: 100%;
+}
+
+ol a.active {
+    color: #2563EB;
+}
+
+ol a.active::after {
+    width: 100%;
+}
+
+.CV {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 2px solid #1e6af8;
+    box-shadow: 1px 1px 10px 1px #0470ec;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-right: 15px;
+}
+
+.CV:hover {
+    box-shadow: 2px 2px 12px 3px #0470ec;
+}
+
+.CV h3 {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.download {
+    width: 23px;
+    height: 23px;
+}
+
+main {
+    margin: 15px 30px 15px 30px;
+    padding: 30px;
+    width: 95%;
+
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+
+}
+
+.left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 35vw;
+
+    padding: 20px;
+}
+.up{
+    margin-bottom: 25px;
+}
+.up h1{
+    font-family:Arial, Helvetica, sans-serif;
+    margin-bottom: 10px;
+    color: #0470ec;
+    font-size: 45px;
+}
+
+.up p{
+    font-family: sans-serif;
+    font-size: 13px;
+    color: #cbcbcc;
+}
+
+.down{
+    border: 2px solid #01091f;
+    border-radius: 10px;
+    background: #010913;
+    padding: 10px 0px 10px 10px;
+    margin-top: 10px;
+    width: 70%;
+    transition: transform 0.5s ease-in-out 0.1ms;
+}
+
+.down:hover{
+    transform: translateY(-10px) ;
+    box-shadow: 2px 2px 8px 2px #011747;
+}
+
+ul{
+    padding-left: 25px;
+    margin-top: 15px;
+    font-family: sans-serif;
+    font-size: 15px;
+
+}
+
+li{
+    margin: 5px;
+}
+.heading{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.heading h2{
+    color: #0470ec;
+    font-size: 34px;
+}
+.right{
+    width: 50vw;
+    padding: 10px;
+}
+
+.top h2{
+    color: #0470ec;
+    margin-bottom: 10px;
+}
+.top p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    width: 50%;
+    margin-left: 5px;
+}
+
+.dcards{
+    margin: 15px 0px;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.card{
+    border: 3px solid #01091f;
+    border-radius: 10px;
+    background: #0109136c;
+    box-shadow: 2px 2px 8px 2px #011747;
+
+    padding: 15px;
+    margin: 15px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+
+    min-width: 350px;
+
+    transition: box-shadow 0.25s ease-in 0.1ms;
+}
+
+.card h3{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.card p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #cbcbcc;
+}
+.card button{
+    border-color: #0652a879;
+    border-radius: 5px;
+    padding: 5px 10px;
+    width: 70%;
+    font-size: 16px;
+
+    background-color: #05234656;
+    color: #0470ec;
+}
+
+.card:hover{
+    box-shadow: 2px 2px 18px 2px #002ca5;
+}
+
+footer{
+    background-color: #010913;
+    border: 2px solid #030c25;
+    margin: 10px;
+    padding: 10px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 10px;
+}
+
+footer h3{
+    font-size: 24px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+footer p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #bebdbd;
+}
+
+.Right{
+    color: #0545f3;
+    font-size: 14px;
+    font-family: 'Courier New', Courier, monospace;
+}
