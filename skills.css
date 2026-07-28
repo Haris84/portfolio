@@ -204,6 +204,7 @@ main {
     border: 2px solid #031c38;
     border-radius: 14px;
     margin: 5px;
+    transition: transform 0.5s ease-out 0.1ms;
 }
 
 .bar img {
@@ -217,6 +218,11 @@ main {
 .bar h4 {
     margin-right: 20px;
     font-family: sans-serif;
+}
+
+.bar:hover{
+    transform: translateX(18px) translateY(-5px);
+    box-shadow: 2px 2px 10px 2px #002375;
 }
 
 .overview {
@@ -250,6 +256,8 @@ main {
     background: #031529;
     padding: 10px;
     width: 14vw;
+
+    transition: transform 0.6s ease-in 0.1ms;
 }
 .card h2 {
     font-family: sans-serif;
@@ -263,6 +271,11 @@ main {
     margin: 10px;
 
     width: 12vw;
+}
+
+.card:hover{
+    transform: translateY(-8px);
+    box-shadow: 2px 2px 15px 3px #02184b;
 }
 
 footer {
@@ -296,6 +309,13 @@ footer .tool {
     box-shadow: 1px 1px 10px 2px #031c38;
 
     padding: 5px;
+
+    transition: transform 0.5s ease-out 0.1ms;
+}
+
+.tcard:hover{
+    box-shadow: 2px 2px 10px 4px #0470ec;
+    transform: scale(1.1)
 }
 
 footer .headings{

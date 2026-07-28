@@ -240,6 +240,11 @@ li{
 
     background-color: #05234656;
     color: #0470ec;
+    transition: transform 0.6s ease-out 0.1ms;
+}
+
+.card button:hover{
+    transform: translateX(5px) translateY(-8px);
 }
 
 .card:hover{
